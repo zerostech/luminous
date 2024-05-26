@@ -1,0 +1,143 @@
+{
+  "groups": [
+    {
+      "name": "luminous",
+      "type": "com.zerostech.luminous.web.LuConfig",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "description": "luminous Framework Configuration."
+    },
+    {
+      "name": "luminous.basic",
+      "type": "com.zerostech.luminous.web.LuConfig$Basic",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "description": "基础信息."
+    },
+    {
+      "name": "luminous.basic.doc",
+      "type": "com.zerostech.luminous.web.LuConfig$Doc",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "description": "文档信息."
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.application.build-time",
+      "type": "java.lang.String",
+      "description": "构建时间."
+    },
+    {
+      "name": "spring.application.version",
+      "type": "java.lang.String",
+      "description": "版本号."
+    },
+    {
+      "name": "luminous.cache",
+      "type": "java.lang.String",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "description": "缓存实现方式.",
+      "defaultValue": "redis"
+    },
+    {
+      "name": "luminous.lock",
+      "type": "java.lang.String",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "description": "分布式锁实现方式.",
+      "defaultValue": "redis"
+    },
+    {
+      "name": "luminous.basic.doc.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "description": "启用文档服务，e.g. true.",
+      "defaultValue": true
+    },
+    {
+      "name": "luminous.basic.doc.title",
+      "type": "java.lang.String",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "description": "标题."
+    },
+    {
+      "name": "luminous.basic.doc.description",
+      "type": "java.lang.String",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "description": "描述."
+    },
+    {
+      "name": "luminous.basic.doc.service-url",
+      "type": "java.lang.String",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "description": "服务地址."
+    },
+    {
+      "name": "luminous.basic.doc.contract-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "description": "联系人名."
+    },
+    {
+      "name": "luminous.basic.doc.contract-email",
+      "type": "java.lang.String",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "description": "联系人邮箱."
+    },
+    {
+      "name": "luminous.basic.doc.match-path",
+      "type": "java.lang.String[]",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "description": "匹配路径."
+    },
+    {
+      "name": "luminous.basic.doc.version",
+      "type": "java.lang.String",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "description": "版本号."
+    },
+    {
+      "name": "luminous.basic.doc.doc-scanner-package",
+      "type": "java.lang.String[]",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "description": "文档扫描路径.",
+      "defaultValue": "com.zerostech"
+    },
+    {
+      "name": "luminous.basic.doc.license",
+      "type": "java.lang.String",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "description": "license."
+    },
+    {
+      "name": "luminous.basic.doc.license-url",
+      "type": "java.lang.String",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "description": "license url."
+    },
+    {
+      "name": "luminous.basic.doc.exclude-urls",
+      "type": "java.lang.String[]",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "description": "排除的路径."
+    },
+    {
+      "name": "luminous.basic.doc.security.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "defaultValue": true,
+      "description": "安全启用开关."
+    },
+    {
+      "name": "luminous.basic.doc.security.username",
+      "type": "java.lang.String",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "defaultValue": "admin",
+      "description": "账号，默认为admin."
+    },
+    {
+      "name": "luminous.basic.doc.security.password",
+      "type": "java.lang.String",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "defaultValue": "Admin@123",
+      "description": "密码，默认为Admin@123."
+    }
+  ]
+}

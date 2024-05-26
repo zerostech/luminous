@@ -28,12 +28,14 @@
         <version>2.7.18</version>
         <relativePath/>
     </parent>
-    <groupId>com.zerostech.luminious</groupId>
+    <groupId>com.zerostech.luminous</groupId>
     <artifactId>parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <name>Luminous Parent Dependency Module</name>
     <packaging>pom</packaging>
+
     <properties>
-        <luminious.version>1.0.0-SNAPSHOT</luminious.version>
+        <luminous.version>1.0.0-SNAPSHOT</luminous.version>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.deploy.skip>false</maven.deploy.skip>
@@ -85,6 +87,16 @@
     <dependencyManagement>
         <!--        Self Modules       -->
         <dependencies>
+            <dependency>
+                <groupId>com.zerostech.luminous</groupId>
+                <artifactId>common</artifactId>
+                <version>${luminous.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zerostech.luminous</groupId>
+                <artifactId>luminous-web-boot-starter</artifactId>
+                <version>${luminous.version}</version>
+            </dependency>
             <!--Spring Boot-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
