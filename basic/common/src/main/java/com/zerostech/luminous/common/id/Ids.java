@@ -19,41 +19,29 @@
  *
  */
 
-package com.zerostech.luminous;
-
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+package com.zerostech.luminous.common.id;
 
 /**
- * Unit test for simple App.
- */
-public class AppTest
-    extends TestCase
-{
+ * @description ID Generate
+ *
+ * @author 迹_Jason
+ *
+ * @create 2024-10-06 17:44
+ **/
+public interface Ids {
+
     /**
-     * Create the test case
+     * get Id
      *
-     * @param testName name of the test case
+     * @return {@link Long}
      */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+    Long getId();
 
     /**
-     * @return the suite of tests being tested
+     * get id
+     *
+     * @param serviceId 服务id
+     * @return {@link Long}
      */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+    Long getId(long serviceId);
 }

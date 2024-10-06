@@ -1,0 +1,40 @@
+{
+  "groups": [
+    {
+      "name": "luminous.basic.ids",
+      "type": "com.zerostech.luminous.redis.ids.IdsProperties",
+      "sourceType": "com.zerostech.luminous.redis.ids.IdsProperties",
+      "description": "luminous Basic Ids."
+    }
+  ],
+  "properties": [
+    {
+      "name": "luminous.basic.ids.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zerostech.luminous.redis.ids.IdsProperties",
+      "description": "分布式ID生成开关，默认为false.",
+      "defaultValue": false
+    },
+    {
+      "name": "luminous.basic.ids.workId",
+      "type": "java.lang.Integer",
+      "sourceType": "com.zerostech.luminous.redis.ids.IdsProperties",
+      "description": "缓存实现方式.",
+      "defaultValue": "redis"
+    },
+    {
+      "name": "luminous.basic.ids.workIdLength",
+      "type": "java.lang.Integer",
+      "sourceType": "com.zerostech.luminous.redis.ids.IdsProperties",
+      "description": "WorkId 长度，默认值：10.",
+      "defaultValue": 10
+    },
+    {
+      "name": "luminous.basic.ids.refreshAliveInterval",
+      "type": "java.lang.Integer",
+      "sourceType": "com.zerostech.luminous.redis.ids.IdsProperties",
+      "description": "刷新存活状态的间隔时间.",
+      "defaultValue": 5
+    }
+  ]
+}
