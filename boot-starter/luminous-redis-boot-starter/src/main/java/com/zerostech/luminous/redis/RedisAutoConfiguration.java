@@ -81,7 +81,7 @@ public class RedisAutoConfiguration {
      * @return the redis cluster cache
      */
     @Bean
-    @ConditionalOnExpression("'${zebra.cache}'.equals('redis')")
+    @ConditionalOnExpression("'${luminous.cache}'.equals('redis')")
     public RedisCacheWrap redisCache() {
         return new RedisCacheWrap(REDIS_TEMPLATES);
     }
@@ -93,7 +93,7 @@ public class RedisAutoConfiguration {
      * @return the redis cluster lock wrap
      */
     @Bean
-    @ConditionalOnExpression("'${zebra.lock}'.equals('redis')")
+    @ConditionalOnExpression("'${luminous.lock}'.equals('redis')")
     public RedisLockWrap redisLock(RedisTemplate<String, String> redisTemplate) {
         return new RedisLockWrap(redisTemplate);
     }

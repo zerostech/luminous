@@ -18,11 +18,10 @@
  *  *
  *
  */
-package com.zerostech.luminous.web;
+package com.zerostech.luminous.common;
 
-import cn.hutool.core.util.IdUtil;
-import cn.hutool.system.UserInfo;
 import com.alibaba.ttl.TransmittableThreadLocal;
+import com.zerostech.luminous.common.user.UserInfo;
 
 /**
  * Created on 2024/5/26.
@@ -56,16 +55,7 @@ public class LuContext {
      * @return the context
      */
     public static LuContext getContext() {
-        LuContext cxt = CONTEXT.get();
-        if (cxt == null) {
-            cxt = new LuContext();
-            cxt.id = IdUtil.simpleUUID();
-            cxt.sourceIP = Lu.Info.ip;
-            cxt.requestUri = "";
-            cxt.userInfo = new UserInfo();
-            setContext(cxt);
-        }
-        return cxt;
+        return CONTEXT.get();
     }
 
     public static void removeContext() {

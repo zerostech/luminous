@@ -45,7 +45,7 @@ public class RedisLock implements ILock {
      * @param redisTemplate the redis template
      */
     RedisLock(String key, RedisTemplate<String, String> redisTemplate) {
-        this.key = "zebra:cluster:lock:" + key;
+        this.key = "luminous:cluster:lock:" + key;
         this.redisTemplate = redisTemplate;
     }
 

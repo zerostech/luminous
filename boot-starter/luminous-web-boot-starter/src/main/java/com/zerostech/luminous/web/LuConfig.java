@@ -26,6 +26,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created on 2024/5/26.
  *
@@ -50,6 +53,26 @@ public class LuConfig {
     @AllArgsConstructor
     public static class Basic {
         private Doc doc = new Doc();
+        private Map<String, ErrorMapping> errorMapping = new HashMap<>();
+    }
+
+    /**
+     * Error mapping.
+     */
+    @Data
+    @Builder
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class ErrorMapping {
+
+        /**
+         * http编码
+         */
+        private Integer httpCode;
+        /**
+         * 业务编码
+         */
+        private String businessCode;
     }
     @Data
     @Builder

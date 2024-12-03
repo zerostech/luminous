@@ -19,41 +19,24 @@
  *
  */
 
-package com.zerostech.luminous;
+package com.zerostech.luminous.mybatis.expand;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
+import java.util.Collection;
 
 /**
- * Unit test for simple App.
+ * Created on 2022/7/14.
+ *
+ * @author 迹_Jason
  */
-public class AppTest
-    extends TestCase
-{
+
+public interface CustomizationMapper<T> extends BaseMapper<T> {
     /**
-     * Create the test case
+     * 批量插入
      *
-     * @param testName name of the test case
+     * @param entityList 实体列表
+     * @return 影响行数
      */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+    int insertBatchSomeColumn(Collection<T> entityList);
 }

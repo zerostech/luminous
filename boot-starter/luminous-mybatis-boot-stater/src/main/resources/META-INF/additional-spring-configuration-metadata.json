@@ -1,0 +1,52 @@
+{
+  "groups": [
+    {
+      "name": "luminous.mybatis",
+      "type": "com.zerostech.luminous.mybatis.MybatisProperties",
+      "sourceType": "com.zerostech.luminous.mybatis.MybatisProperties",
+      "description": "luminous Framework Mybatis Configuration."
+    },
+    {
+      "name": "luminous.mybatis.pagination",
+      "type": "com.zerostech.luminous.mybatis.MybatisProperties$Pagination",
+      "sourceType": "com.zerostech.luminous.mybatis.MybatisProperties",
+      "description": "luminous Framework Mybatis Configuration."
+    }
+  ],
+  "properties": [
+    {
+      "name": "luminous.mybatis.blockAttackEnabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zerostech.luminous.mybatis.MybatisProperties",
+      "description": "是否开启全局更新和删除.",
+      "defaultValue": true
+    },
+    {
+      "name": "luminous.mybatis.escapeSqlParameterEnabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zerostech.luminous.mybatis.MybatisProperties",
+      "description": "是否开启防止特殊字符注入插件.",
+      "defaultValue": true
+    },
+    {
+      "name": "luminous.mybatis.pagination.overflow",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zerostech.luminous.mybatis.MybatisProperties$Pagination",
+      "description": "是否溢出覆盖.",
+      "defaultValue": true
+    },
+    {
+      "name": "luminous.mybatis.pagination.maxLimit",
+      "type": "java.lang.Long",
+      "sourceType": "com.zerostech.luminous.mybatis.MybatisProperties$Pagination",
+      "description": "分页最大条数.",
+      "defaultValue": 200
+    },
+    {
+      "name": "luminous.mybatis.pagination.dbType",
+      "type": "java.lang.String",
+      "sourceType": "com.zerostech.luminous.mybatis.MybatisProperties$Pagination",
+      "description": "DB 类型."
+    }
+  ]
+}

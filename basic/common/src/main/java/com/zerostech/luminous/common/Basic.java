@@ -24,6 +24,7 @@ import cn.hutool.core.util.IdUtil;
 import com.zerostech.luminous.common.cache.ICache;
 import com.zerostech.luminous.common.cache.ICacheWrap;
 import com.zerostech.luminous.common.lock.ILockWrap;
+import com.zerostech.luminous.common.tracing.ITracing;
 
 /**
  * Created on 2024/5/26.
@@ -49,6 +50,11 @@ public class Basic {
      * 默认缓存服务.
      */
     public ICache cache;
+
+    /**
+     * 链路跟踪
+     */
+    public ITracing tracing;
 
 
     /**

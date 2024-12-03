@@ -99,6 +99,11 @@
                 <artifactId>luminous-web-boot-starter</artifactId>
                 <version>${luminous.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.zerostech.luminous</groupId>
+                <artifactId>luminous-mybatis-boot-starter</artifactId>
+                <version>${luminous.version}</version>
+            </dependency>
             <!--Spring Boot-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>

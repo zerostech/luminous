@@ -21,9 +21,12 @@
 package com.zerostech.luminous.web;
 
 import cn.hutool.core.net.NetUtil;
+import cn.hutool.core.util.IdUtil;
 import com.zerostech.luminous.common.Basic;
+import com.zerostech.luminous.common.LuContext;
 import com.zerostech.luminous.common.cache.ICacheWrap;
 import com.zerostech.luminous.common.lock.ILockWrap;
+import com.zerostech.luminous.common.user.UserInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -98,13 +101,26 @@ public class Lu {
         return Lu.basic.cache != null;
     }
 
+    public static boolean isPresentTracing() {
+        return Lu.basic.tracing != null;
+    }
+
     /**
      * 获取请求上下文信息.
      *
      * @return 请求上下文信息 Z context
      */
     public static LuContext context() {
-        return LuContext.getContext();
+        LuContext cxt = LuContext.getContext();
+        if (cxt == null) {
+            cxt = new LuContext();
+            cxt.setId(IdUtil.simpleUUID());
+            cxt.setSourceIP(Lu.Info.ip);
+            cxt.setRequestUri("");
+            cxt.setUserInfo(new UserInfo());
+            LuContext.setContext(cxt);
+        }
+        return cxt;
     }
 
     /**
