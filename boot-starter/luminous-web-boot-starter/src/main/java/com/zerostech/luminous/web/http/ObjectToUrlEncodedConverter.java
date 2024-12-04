@@ -21,7 +21,6 @@ package com.zerostech.luminous.web.http;
 
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.micrometer.core.lang.Nullable;
 import org.apache.commons.lang3.NotImplementedException;
 import org.springframework.http.HttpInputMessage;
 import org.springframework.http.HttpOutputMessage;
@@ -29,6 +28,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.http.converter.HttpMessageNotWritableException;
+import org.springframework.lang.Nullable;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
