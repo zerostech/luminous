@@ -30,6 +30,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>luminous-mybatis-boot-stater</artifactId>
+    <name>Luminous Mybatis Boot Stater</name>
     <packaging>jar</packaging>
 
     <properties>
@@ -40,6 +41,7 @@
         <mybatis-plus-boot-starter.version>3.5.9</mybatis-plus-boot-starter.version>
         <mybatis-datasource-boot-starter.version>3.5.2</mybatis-datasource-boot-starter.version>
         <mybatis-pagehelper.version>1.4.7</mybatis-pagehelper.version>
+        <mybatis-plus-join-boot-starter.version>1.5.2</mybatis-plus-join-boot-starter.version>
     </properties>
 
     <dependencies>
@@ -75,8 +77,13 @@
 <!--        </dependency>-->
         <dependency>
             <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-jsqlparser</artifactId>
+            <artifactId>mybatis-plus-jsqlparser-4.9</artifactId>
             <version>${mybatis-plus-boot-starter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.yulichang</groupId>
+            <artifactId>mybatis-plus-join-boot-starter</artifactId>
+            <version>${mybatis-plus-join-boot-starter.version}</version>
         </dependency>
     </dependencies>
 

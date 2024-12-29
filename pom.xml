@@ -29,6 +29,7 @@
     <artifactId>luminous-framework</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <name>Luminous Framework</name>
     <modules>
         <module>parent</module>
         <module>basic/common</module>
