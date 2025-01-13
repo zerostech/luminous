@@ -38,3 +38,4 @@ api-docs/
 *.crc
 
 http-client.private.env.json
+application-default.yml
