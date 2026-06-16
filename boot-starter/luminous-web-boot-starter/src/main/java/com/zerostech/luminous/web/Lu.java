@@ -27,14 +27,14 @@ import com.zerostech.luminous.common.LuContext;
 import com.zerostech.luminous.common.cache.ICacheWrap;
 import com.zerostech.luminous.common.lock.ILockWrap;
 import com.zerostech.luminous.common.user.UserInfo;
+import jakarta.annotation.PostConstruct;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Configuration;
 
-import javax.annotation.PostConstruct;
-import javax.servlet.http.HttpServletRequest;
 import java.net.InetAddress;
 import java.util.Enumeration;
 import java.util.HashMap;

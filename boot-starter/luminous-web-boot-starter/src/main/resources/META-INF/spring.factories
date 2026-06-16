@@ -1,3 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.zerostech.luminous.web.Lu,\
-  com.zerostech.luminous.web.LuStartUp

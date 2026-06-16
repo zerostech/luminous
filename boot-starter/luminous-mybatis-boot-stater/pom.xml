@@ -33,12 +33,10 @@
     <packaging>jar</packaging>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <maven.deploy.skip>false</maven.deploy.skip>
         <maven.install.skip>false</maven.install.skip>
-        <mybatis-plus-boot-starter.version>3.5.9</mybatis-plus-boot-starter.version>
-        <mybatis-datasource-boot-starter.version>3.5.2</mybatis-datasource-boot-starter.version>
         <mybatis-pagehelper.version>1.4.7</mybatis-pagehelper.version>
     </properties>
 
@@ -49,7 +47,7 @@
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <artifactId>mybatis-plus-spring-boot4-starter</artifactId>
             <version>${mybatis-plus-boot-starter.version}</version>
         </dependency>
         <dependency>
