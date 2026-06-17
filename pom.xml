@@ -34,7 +34,8 @@
         <module>basic/common</module>
         <module>boot-starter/luminous-web-boot-starter</module>
         <module>boot-starter/luminous-redis-boot-starter</module>
-        <module>boot-starter/luminous-mybatis-boot-stater</module>
+        <module>boot-starter/luminous-mybatis-boot-starter</module>
+        <module>boot-starter/luminous-trace-simple-boot-starter</module>
         <module>examples/first-example</module>
     </modules>
     <properties>

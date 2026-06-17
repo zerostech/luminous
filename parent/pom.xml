@@ -105,6 +105,11 @@
                 <artifactId>luminous-mybatis-boot-starter</artifactId>
                 <version>${luminous.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.zerostech.luminous</groupId>
+                <artifactId>luminous-trace-simple-boot-starter</artifactId>
+                <version>${luminous.version}</version>
+            </dependency>
             <!--Spring Boot-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -305,9 +310,6 @@
                             </goals>
                         </execution>
                     </executions>
-                    <configuration>
-                        <fork>true</fork>
-                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>pl.project13.maven</groupId>
