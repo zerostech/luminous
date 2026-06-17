@@ -45,6 +45,13 @@
       "defaultValue": "redis"
     },
     {
+      "name": "luminous.web.trace",
+      "type": "java.lang.String",
+      "sourceType": "com.zerostech.luminous.web.LuConfig",
+      "description": "链路跟踪实现方式，默认simple.",
+      "defaultValue": "simple"
+    },
+    {
       "name": "luminous.web.basic.doc.enabled",
       "type": "java.lang.Boolean",
       "sourceType": "com.zerostech.luminous.web.LuConfig",

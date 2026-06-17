@@ -46,6 +46,8 @@ public class LuConfig {
     private String cache = "redis";
     @Builder.Default
     private String lock = "redis";
+    @Builder.Default
+    private String trace = "simple";
 
     @Data
     @Builder

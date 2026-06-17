@@ -1,0 +1,26 @@
+{
+  "groups": [
+    {
+      "name": "luminous.trace.simple",
+      "type": "com.zerostech.luminous.trace.simple.TraceSimpleProperties",
+      "sourceType": "com.zerostech.luminous.trace.simple.TraceSimpleProperties",
+      "description": "Luminous Trace Simple Configuration."
+    }
+  ],
+  "properties": [
+    {
+      "name": "luminous.trace.simple.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zerostech.luminous.trace.simple.TraceSimpleProperties",
+      "description": "启用简单链路跟踪，默认为true.",
+      "defaultValue": true
+    },
+    {
+      "name": "luminous.trace.simple.header-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zerostech.luminous.trace.simple.TraceSimpleProperties",
+      "description": "链路跟踪HTTP头名称，默认为X-Trace-Id.",
+      "defaultValue": "X-Trace-Id"
+    }
+  ]
+}

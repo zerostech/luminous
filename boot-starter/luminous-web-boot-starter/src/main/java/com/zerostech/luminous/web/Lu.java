@@ -26,6 +26,7 @@ import com.zerostech.luminous.common.Basic;
 import com.zerostech.luminous.common.LuContext;
 import com.zerostech.luminous.common.cache.ICacheWrap;
 import com.zerostech.luminous.common.lock.ILockWrap;
+import com.zerostech.luminous.common.tracing.ITracing;
 import com.zerostech.luminous.common.user.UserInfo;
 import jakarta.annotation.PostConstruct;
 import jakarta.servlet.http.HttpServletRequest;
@@ -90,6 +91,9 @@ public class Lu {
         }
         if (Lu.applicationContext.containsBean(injectZConfig.getLock() + "Lock")) {
             Lu.basic.lock = (ILockWrap) Lu.applicationContext.getBean(injectZConfig.getLock() + "Lock");
+        }
+        if (Lu.applicationContext.containsBean(injectZConfig.getTrace() + "Tracing")) {
+            Lu.basic.tracing = (ITracing) Lu.applicationContext.getBean(injectZConfig.getTrace() + "Tracing");
         }
     }
 
