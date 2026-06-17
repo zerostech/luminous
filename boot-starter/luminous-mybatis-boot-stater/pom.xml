@@ -30,6 +30,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>luminous-mybatis-boot-stater</artifactId>
+    <name>Luminous Mybatis boot starter</name>
     <packaging>jar</packaging>
 
     <properties>

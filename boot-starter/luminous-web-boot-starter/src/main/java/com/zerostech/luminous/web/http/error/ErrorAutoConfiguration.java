@@ -24,7 +24,9 @@ import jakarta.servlet.Servlet;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
@@ -43,6 +45,7 @@ import org.springframework.web.servlet.DispatcherServlet;
 @Configuration
 @ConditionalOnWebApplication
 @ConditionalOnClass({Servlet.class, DispatcherServlet.class})
+@AutoConfigureAfter(name = "org.springframework.boot.jackson.autoconfigure.JacksonAutoConfiguration")
 @AutoConfigureBefore(ErrorMvcAutoConfiguration.class)
 @ConditionalOnProperty(prefix = "luminous.basic.http", name = "use-unity-error", havingValue = "true", matchIfMissing = true)
 public class ErrorAutoConfiguration {
@@ -65,6 +68,7 @@ public class ErrorAutoConfiguration {
      * @return the error controller
      */
     @Bean
+    @ConditionalOnBean(ObjectMapper.class)
     public ErrorController errorController(ErrorAttributes errorAttributes, ObjectMapper objectMapper) {
         return new ErrorController(errorAttributes, objectMapper);
     }

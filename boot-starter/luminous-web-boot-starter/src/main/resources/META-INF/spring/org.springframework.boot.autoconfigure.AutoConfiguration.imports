@@ -1,2 +1,5 @@
 com.zerostech.luminous.web.Lu
 com.zerostech.luminous.web.LuStartUp
+com.zerostech.luminous.web.future.FutureExecutorAutoConfiguration
+com.zerostech.luminous.web.doc.DocAutoConfiguration
+com.zerostech.luminous.web.http.controller.ExceptionControllerAdvice

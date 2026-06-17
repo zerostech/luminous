@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: first-example
+
+luminous:
+  cache: none
+  lock: none
+  ids: none
+  basic:
+    ids:
+      enabled: false
+  web:
+    basic:
+      errorMapping:
+        400: com.zerostech.luminous.example.exception.BadRequestException
+        401: com.zerostech.luminous.example.exception.UnauthorizedException
+        403: com.zerostech.luminous.example.exception.ForbiddenException
+        404: com.zerostech.luminous.example.exception.NotFoundException
+        500: com.zerostech.luminous.example.exception.InternalServerErrorException
+      doc:
+        enabled: true
+        title: Luminous First Example API
+        description: Demonstrates the Luminous framework web service capabilities
+        version: 1.0.0
+        contract-name: ZerosTech
+        contract-email: i@zerostech.com
+        doc-scanner-package:
+          - com.zerostech.luminous.example
+        security:
+          enabled: true
+          username: admin
+          password: Admin@123
+
